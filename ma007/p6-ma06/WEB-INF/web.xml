@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app>
+	<servlet>
+	     <servlet-name>Header</servlet-name>
+	     <servlet-class>Header</servlet-class>
+	<init-param>
+                <param-name>colorname</param-name>
+                <param-value>blue</param-value>
+        </init-param>
+        </servlet>
+        
+       <servlet-mapping>
+       		<servlet-name>Header</servlet-name>
+       		<url-pattern>/Header</url-pattern>
+	</servlet-mapping>
+
+</web-app>
