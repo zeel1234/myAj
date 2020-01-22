@@ -1,0 +1,8 @@
+<html>
+<body>
+<form action="Calc" method="post">
+    Enter number1:<input type="text" name="no1"><br><br>
+    <input type="submit" name="add" value="odd/even">
+</form>
+</body>
+</html>
