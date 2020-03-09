@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 9 Mar, 2020 4:47:27 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="organisation.Employee" table="employee" catalog="organisation" optimistic-lock="version">
+        <id name="empId" type="int">
+            <column name="emp_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="empName" type="string">
+            <column name="emp_name" length="45" />
+        </property>
+        <many-to-one name="address" class="AddressTable">
+            <column name="add_id"></column>
+	</many-to-one>
+    </class>
+</hibernate-mapping>
